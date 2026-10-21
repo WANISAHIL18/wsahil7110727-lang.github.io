@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adfar Amin Wani | Digital Marketer Portfolio</title>
+<meta name="description" content="Adfar Amin Wani is a fresher digital marketer skilled in SEO, social media marketing, content marketing, Google Ads and analytics. View portfolio and get in touch.">
+<meta name="keywords" content="Adfar Amin Wani, digital marketer, fresher digital marketer, SEO, social media marketing, content marketing, Google Ads, portfolio">
+<meta name="author" content="Adfar Amin Wani">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b1020">
+<link rel="canonical" href="https://www.example.com/">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adfar Amin Wani | Digital Marketer Portfolio">
+<meta property="og:description" content="Fresher digital marketer focused on SEO, social media, content and paid ads. Let's grow your brand.">
+<meta property="og:url" content="https://www.example.com/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Adfar Amin Wani | Digital Marketer">
+<meta name="twitter:description" content="Fresher digital marketer focused on SEO, social media, content and paid ads.">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Adfar Amin Wani",
+  "jobTitle": "Digital Marketer",
+  "email": "mailto:liyakatkhan@ilssrinagar.com",
+  "telephone": "+919682502246",
+  "url": "https://www.example.com/",
+  "knowsAbout": ["SEO", "Social Media Marketing", "Content Marketing", "Google Ads", "Email Marketing", "Web Analytics"]
+}
+</script>
+
+<style>
+  :root{
+    --bg:#0b1020; --bg2:#111833; --card:rgba(255,255,255,.05); --border:rgba(255,255,255,.1);
+    --text:#e8ecf8; --muted:#9aa4c4; --a:#7c5cff; --b:#00d4ff; --c:#ff5cae;
+    --grad:linear-gradient(135deg,var(--a),var(--b));
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:72px}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img,svg{max-width:100%}
+  .container{width:min(1120px,92%);margin-inline:auto}
+  section{padding:96px 0;position:relative}
+  h1,h2,h3{line-height:1.2}
+  .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+  /* animated background */
+  .bg-blobs{position:fixed;inset:0;z-index:-1;overflow:hidden}
+  .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;animation:float 18s ease-in-out infinite}
+  .blob.b1{width:420px;height:420px;background:var(--a);top:-100px;left:-100px}
+  .blob.b2{width:380px;height:380px;background:var(--b);bottom:-120px;right:-80px;animation-delay:-6s}
+  .blob.b3{width:300px;height:300px;background:var(--c);top:45%;left:55%;opacity:.18;animation-delay:-11s}
+  @keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,40px) scale(1.1)}66%{transform:translate(-40px,70px) scale(.95)}}
+
+  /* cursor glow */
+  .cursor-glow{position:fixed;width:340px;height:340px;border-radius:50%;pointer-events:none;z-index:0;
+    background:radial-gradient(circle,rgba(124,92,255,.18),transparent 65%);transform:translate(-50%,-50%);transition:opacity .3s}
+
+  /* progress bar */
+  #progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:200}
+
+  /* nav */
+  header{position:fixed;top:0;width:100%;z-index:100;backdrop-filter:blur(14px);background:rgba(11,16,32,.65);border-bottom:1px solid var(--border)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-weight:800;font-size:1.25rem;letter-spacing:.3px}
+  .logo span{color:var(--b)}
+  .nav-links{display:flex;gap:30px;list-style:none}
+  .nav-links a{color:var(--muted);font-size:.95rem;position:relative;transition:color .25s}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--grad);transition:width .3s}
+  .nav-links a:hover,.nav-links a.active{color:#fff}
+  .nav-links a:hover::after,.nav-links a.active::after{width:100%}
+  .burger{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:50px;font-weight:600;border:0;cursor:pointer;font-size:1rem;transition:transform .25s,box-shadow .25s}
+  .btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 30px rgba(124,92,255,.35)}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 38px rgba(0,212,255,.35)}
+  .btn-ghost{border:1px solid var(--border);color:var(--text);background:var(--card)}
+  .btn-ghost:hover{transform:translateY(-3px);border-color:var(--b)}
+
+  /* hero */
+  #home{min-height:100vh;display:flex;align-items:center;padding-top:110px}
+  .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+  .badge{display:inline-block;padding:7px 16px;border:1px solid var(--border);border-radius:50px;background:var(--card);color:var(--b);font-size:.85rem;margin-bottom:22px}
+  .badge i{display:inline-block;width:8px;height:8px;background:#2ee59d;border-radius:50%;margin-right:8px;animation:pulse 1.8s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,229,157,.6)}100%{box-shadow:0 0 0 12px rgba(46,229,157,0)}}
+  .hero h1{font-size:clamp(2.3rem,6vw,4.1rem);font-weight:800;margin-bottom:12px}
+  .typed-line{font-size:clamp(1.2rem,3vw,1.7rem);color:var(--muted);margin-bottom:20px;min-height:2.2rem}
+  .typed-line b{color:var(--b)}
+  .cursor{display:inline-block;width:2px;height:1.2em;background:var(--b);margin-left:3px;vertical-align:middle;animation:blink 1s infinite}
+  @keyframes blink{50%{opacity:0}}
+  .hero p.lead{color:var(--muted);max-width:540px;margin-bottom:32px}
+  .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+  .avatar-wrap{display:flex;justify-content:center}
+  .avatar{position:relative;width:min(320px,75vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;
+    background:var(--grad);padding:6px;animation:spin 14s linear infinite}
+  .avatar-inner{width:100%;height:100%;border-radius:50%;background:var(--bg2);display:grid;place-items:center;animation:spin 14s linear infinite reverse;
+    font-size:5.5rem;font-weight:800}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .avatar::before{content:"";position:absolute;inset:-18px;border-radius:50%;border:1px dashed rgba(255,255,255,.2)}
+
+  /* section titles */
+  .sec-head{text-align:center;margin-bottom:56px}
+  .sec-head small{color:var(--b);letter-spacing:3px;text-transform:uppercase;font-size:.8rem}
+  .sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-top:8px}
+  .sec-head::after{content:"";display:block;width:70px;height:4px;border-radius:4px;background:var(--grad);margin:16px auto 0}
+
+  /* cards */
+  .card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px;backdrop-filter:blur(8px);transition:transform .35s,border-color .35s,box-shadow .35s}
+  .card:hover{transform:translateY(-8px);border-color:rgba(0,212,255,.5);box-shadow:0 20px 45px rgba(0,0,0,.35)}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:34px}
+  .about-grid p{color:var(--muted);margin-bottom:16px}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .stat{text-align:center;padding:24px 12px}
+  .stat h3{font-size:2.2rem}
+  .stat span{color:var(--muted);font-size:.9rem}
+
+  /* services */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .icon{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:1.7rem;background:rgba(124,92,255,.15);margin-bottom:18px}
+  .card h3{margin-bottom:10px;font-size:1.2rem}
+  .card p{color:var(--muted);font-size:.96rem}
+
+  /* skills */
+  .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px 50px}
+  .skill-top{display:flex;justify-content:space-between;margin-bottom:8px;font-weight:600}
+  .bar{height:10px;border-radius:10px;background:rgba(255,255,255,.08);overflow:hidden}
+  .bar i{display:block;height:100%;width:0;border-radius:10px;background:var(--grad);transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+  .tools{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:50px}
+  .tools span{padding:9px 20px;border-radius:50px;border:1px solid var(--border);background:var(--card);font-size:.92rem;transition:.3s}
+  .tools span:hover{background:var(--grad);transform:translateY(-3px);border-color:transparent}
+
+  /* timeline */
+  .timeline{max-width:760px;margin:auto;position:relative;padding-left:34px;border-left:2px solid var(--border)}
+  .t-item{position:relative;margin-bottom:28px}
+  .t-item::before{content:"";position:absolute;left:-43px;top:26px;width:16px;height:16px;border-radius:50%;background:var(--grad);box-shadow:0 0 0 6px rgba(124,92,255,.2)}
+  .t-item .date{color:var(--b);font-size:.85rem;font-weight:600}
+
+  /* projects */
+  .proj-img{height:160px;border-radius:14px;margin-bottom:18px;display:grid;place-items:center;font-size:3rem;position:relative;overflow:hidden}
+  .p1{background:linear-gradient(135deg,#7c5cff,#3b2bb5)}
+  .p2{background:linear-gradient(135deg,#00d4ff,#0067b3)}
+  .p3{background:linear-gradient(135deg,#ff5cae,#a3225f)}
+  .proj-img::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.25) 50%,transparent 70%);transform:translateX(-100%);transition:transform .8s}
+  .card:hover .proj-img::after{transform:translateX(100%)}
+  .tag{display:inline-block;margin:12px 6px 0 0;padding:4px 12px;border-radius:50px;font-size:.78rem;background:rgba(0,212,255,.12);color:var(--b)}
+
+  /* contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:34px}
+  .c-item{display:flex;gap:16px;align-items:center;margin-bottom:18px;padding:18px;border-radius:16px;background:var(--card);border:1px solid var(--border);transition:.3s;word-break:break-word}
+  .c-item:hover{border-color:var(--b);transform:translateX(6px)}
+  .c-item .ic{font-size:1.5rem;width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:rgba(124,92,255,.15);flex-shrink:0}
+  .c-item small{color:var(--muted);display:block}
+  form{display:flex;flex-direction:column;gap:16px}
+  input,textarea{width:100%;padding:15px 18px;border-radius:14px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--text);font:inherit;outline:none;transition:.3s}
+  input:focus,textarea:focus{border-color:var(--b);box-shadow:0 0 0 4px rgba(0,212,255,.12)}
+  textarea{min-height:140px;resize:vertical}
+
+  footer{text-align:center;padding:30px 0;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+  #top{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;border:0;background:var(--grad);color:#fff;font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:90}
+  #top.show{opacity:1;pointer-events:auto}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(40px);transition:opacity .9s,transform .9s}
+  .reveal.in{opacity:1;transform:none}
+
+  /* responsive */
+  @media(max-width:900px){
+    .hero,.about-grid,.contact-grid,.skills-grid{grid-template-columns:1fr}
+    .grid-3{grid-template-columns:1fr 1fr}
+    .avatar-wrap{order:-1}
+    .hero{text-align:center}
+    .hero p.lead{margin-inline:auto}
+    .hero-btns{justify-content:center}
+  }
+  @media(max-width:640px){
+    section{padding:72px 0}
+    .grid-3{grid-template-columns:1fr}
+    .burger{display:block}
+    .nav-links{position:absolute;top:68px;left:0;width:100%;flex-direction:column;gap:0;background:rgba(11,16,32,.97);
+      max-height:0;overflow:hidden;transition:max-height .4s}
+    .nav-links.open{max-height:380px;border-bottom:1px solid var(--border)}
+    .nav-links li{padding:15px 6%}
+    .cursor-glow{display:none}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div class="bg-blobs" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="cursor-glow" id="glow" aria-hidden="true"></div>
+
+<header>
+  <nav class="container" aria-label="Main navigation">
+    <a href="#home" class="logo">Adfar<span>.</span>Wani</a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home">
+    <div class="container hero">
+      <div>
+        <span class="badge"><i></i>Open to internships &amp; entry-level roles</span>
+        <h1>Hi, I'm <span class="grad-text">Adfar Amin Wani</span></h1>
+        <div class="typed-line">I'm a <b id="typed"></b><span class="cursor"></span></div>
+        <p class="lead">A fresher digital marketer, eager to help brands get discovered online through smart SEO, engaging social media and data-driven campaigns.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Hire Me &rarr;</a>
+          <a href="#projects" class="btn btn-ghost">View My Work</a>
+        </div>
+      </div>
+      <div class="avatar-wrap">
+        <div class="avatar"><div class="avatar-inner grad-text" aria-label="Initials AW">AW</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="sec-head reveal"><small>About Me</small><h2>Who is Adfar?</h2></div>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>I'm <strong>Adfar Amin Wani</strong>, a fresher digital marketer who completed digital marketing training during 2025–2026. I love turning ideas into online visibility, traffic and customers.</p>
+          <p>I'm a quick learner, curious about trends and tools, and I enjoy mixing creativity with analytics. I'm looking for an opportunity to learn from a great team while contributing fresh ideas and consistent effort.</p>
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+        <div class="stats reveal">
+          <div class="card stat"><h3 class="grad-text" data-count="6">0</h3><span>Core Skills</span></div>
+          <div class="card stat"><h3 class="grad-text" data-count="2026">0</h3><span>Certified Year</span></div>
+          <div class="card stat"><h3 class="grad-text" data-count="100" data-suffix="%">0</h3><span>Dedication</span></div>
+          <div class="card stat"><h3 class="grad-text" data-count="24" data-suffix="/7">0</h3><span>Learning Mindset</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="sec-head reveal"><small>What I Do</small><h2>Digital Marketing Services</h2></div>
+      <div class="grid-3">
+        <article class="card reveal"><div class="icon">🔍</div><h3>Search Engine Optimization</h3><p>Keyword research, on-page optimization and basic technical SEO to improve rankings and organic traffic.</p></article>
+        <article class="card reveal"><div class="icon">📱</div><h3>Social Media Marketing</h3><p>Content planning, post design ideas and community engagement across Instagram, Facebook, LinkedIn and more.</p></article>
+        <article class="card reveal"><div class="icon">✍️</div><h3>Content Marketing</h3><p>Blog writing, captions and brand storytelling that attract the right audience and keep them engaged.</p></article>
+        <article class="card reveal"><div class="icon">🎯</div><h3>Paid Advertising</h3><p>Setting up and monitoring Google Ads and Meta Ads campaigns with a focus on targeting and budget control.</p></article>
+        <article class="card reveal"><div class="icon">📧</div><h3>Email Marketing</h3><p>Creating email campaigns and newsletters that nurture leads and bring customers back.</p></article>
+        <article class="card reveal"><div class="icon">📊</div><h3>Analytics &amp; Reporting</h3><p>Tracking performance with Google Analytics to understand results and improve campaigns.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="sec-head reveal"><small>My Skills</small><h2>What I Bring to the Table</h2></div>
+      <div class="skills-grid reveal">
+        <div><div class="skill-top"><span>SEO (On-page &amp; Off-page)</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+        <div><div class="skill-top"><span>Social Media Marketing</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+        <div><div class="skill-top"><span>Content Writing</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+        <div><div class="skill-top"><span>Google Ads / Meta Ads</span><span>65%</span></div><div class="bar"><i data-w="65"></i></div></div>
+        <div><div class="skill-top"><span>Email Marketing</span><span>70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+        <div><div class="skill-top"><span>Google Analytics</span><span>65%</span></div><div class="bar"><i data-w="65"></i></div></div>
+      </div>
+      <div class="tools reveal">
+        <span>Google Analytics</span><span>Search Console</span><span>Google Ads</span><span>Meta Business Suite</span>
+        <span>Canva</span><span>Mailchimp</span><span>WordPress</span><span>Keyword Planner</span><span>ChatGPT / AI Tools</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="sec-head reveal"><small>Education</small><h2>My Learning Journey</h2></div>
+      <div class="timeline">
+        <div class="t-item card reveal">
+          <span class="date">2025 – 2026</span>
+          <h3>Digital Marketing</h3>
+          <p>Completed professional training covering SEO, social media marketing, content marketing, paid ads, email marketing and web analytics with practical learning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="sec-head reveal"><small>Portfolio</small><h2>Practice Projects</h2></div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <div class="proj-img p1">🚀</div>
+          <h3>SEO Audit &amp; Keyword Plan</h3>
+          <p>A sample website audit with keyword research, on-page fixes and an optimization checklist.</p>
+          <span class="tag">SEO</span><span class="tag">Research</span>
+        </article>
+        <article class="card reveal">
+          <div class="proj-img p2">📅</div>
+          <h3>30-Day Social Media Calendar</h3>
+          <p>A content calendar with post ideas, hashtags and posting schedule for a sample brand.</p>
+          <span class="tag">Social Media</span><span class="tag">Canva</span>
+        </article>
+        <article class="card reveal">
+          <div class="proj-img p3">💡</div>
+          <h3>Ad Campaign Concept</h3>
+          <p>A practice Google/Meta ad campaign plan with audience targeting, budget split and ad copy.</p>
+          <span class="tag">Paid Ads</span><span class="tag">Copywriting</span>
+        </article>
+      </div>
+      <!-- Tip: replace these practice projects with your real work and add links when you have them. -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="sec-head reveal"><small>Contact</small><h2>Let's Work Together</h2></div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <a class="c-item" href="mailto:liyakatkhan@ilssrinagar.com"><div class="ic">✉️</div><div><small>Email</small>liyakatkhan@ilssrinagar.com</div></a>
+          <a class="c-item" href="tel:+919682502246"><div class="ic">📞</div><div><small>Phone</small>+91 96825 02246</div></a>
+          <a class="c-item" href="https://wa.me/919682502246" target="_blank" rel="noopener"><div class="ic">💬</div><div><small>WhatsApp</small>Chat with me</div></a>
+        </div>
+        <form class="card reveal" id="contactForm" aria-label="Contact form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="msg" placeholder="Your Message" required></textarea>
+          <button class="btn btn-primary" type="submit">Send Message ✈</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">&copy; <span id="year">2026</span> Adfar Amin Wani. All rights reserved. Built with ❤️ for growth.</div>
+</footer>
+<button id="top" aria-label="Back to top">&uarr;</button>
+
+<script>
+  // Typing effect
+  const words=["Digital Marketer","SEO Enthusiast","Social Media Strategist","Content Creator","Fast Learner"];
+  const el=document.getElementById('typed');let w=0,c=0,del=false;
+  (function type(){
+    const word=words[w];
+    el.textContent=word.substring(0,c);
+    if(!del&&c<word.length){c++;setTimeout(type,90)}
+    else if(!del){del=true;setTimeout(type,1300)}
+    else if(c>0){c--;setTimeout(type,45)}
+    else{del=false;w=(w+1)%words.length;setTimeout(type,300)}
+  })();
+
+  // Mobile menu
+  const burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+  burger.addEventListener('click',()=>{const o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+
+  // Reveal, skill bars, counters
+  function countUp(e){
+    const t=+e.dataset.count,s=e.dataset.suffix||'';let n=0;const step=Math.max(1,Math.ceil(t/60));
+    const i=setInterval(()=>{n=Math.min(t,n+step);e.textContent=n+s;if(n>=t)clearInterval(i)},25);
+  }
+  const io=new IntersectionObserver(es=>es.forEach(en=>{
+    if(!en.isIntersecting)return;
+    en.target.classList.add('in');
+    en.target.querySelectorAll('.bar i').forEach(b=>b.style.width=b.dataset.w+'%');
+    en.target.querySelectorAll('[data-count]').forEach(countUp);
+    io.unobserve(en.target);
+  }),{threshold:.15});
+  document.querySelectorAll('.reveal').forEach((e,i)=>{e.style.transitionDelay=(i%3)*0.12+'s';io.observe(e)});
+
+  // Scroll: progress, active link, back-to-top
+  const secs=[...document.querySelectorAll('main section')],navA=[...links.querySelectorAll('a')],top=document.getElementById('top');
+  addEventListener('scroll',()=>{
+    const h=document.documentElement;
+    document.getElementById('progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+    top.classList.toggle('show',h.scrollTop>500);
+    let cur=secs[0].id;secs.forEach(s=>{if(h.scrollTop+120>=s.offsetTop)cur=s.id});
+    navA.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
+  },{passive:true});
+  top.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+
+  // Cursor glow
+  const glow=document.getElementById('glow');
+  addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'},{passive:true});
+
+  // Contact form -> opens email app
+  document.getElementById('contactForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const n=encodeURIComponent(document.getElementById('name').value),
+          em=document.getElementById('email').value,
+          m=encodeURIComponent(document.getElementById('msg').value+"\n\nFrom: "+em);
+    location.href=`mailto:liyakatkhan@ilssrinagar.com?subject=Portfolio enquiry from ${n}&body=${m}`;
+  });
+
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
